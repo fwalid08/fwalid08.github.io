@@ -2,20 +2,213 @@
 // src/pages/index.astro
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <!-- You can replace the card's data with your own here. -->
-<BaseLayout title="Freelance Full Stack Web Developer" description="Freelance full-stack web developer skilled in React, Laravel, Node.js, and API integration. I build modern, responsive, and scalable websites tailored to client needs." keywords="freelance”, “full-stack web developer”, “React”, “Laravel”, “API integration”, “responsive”, “scalable">
-	<Card
-	  name="Fahrul W. DJuhaeri"
-	  position="Freelance Full Stack Web Developer"
-	  aboutMe={`I’m a freelance full-stack web developer with a passion for building clean, responsive, and efficient websites and web applications. I specialize in both front-end and back-end development using modern tools like React, Vue, Laravel, and Node.js. My focus is on delivering fast, user-friendly, and scalable solutions that help businesses grow online.\n\nI enjoy turning ideas into real products and working with clients to solve real-world problems through code. Whether it’s creating a custom dashboard, building an e-commerce platform, or integrating third-party APIs, I always aim for reliable results and clear communication from start to finish.`}
-	  linkedin="https://www.linkedin.com/in/fwalid08"
-	  github="https://github.com/fwalid08"
-	  cvLink="#"
-	  profileImage="https://media.licdn.com/dms/image/v2/D5603AQG7LAA2PYsMDQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680699604675?e=1756339200&v=beta&t=bzgkvx5bshFXgjQ3tvViGZM75UrvxPGypLZCePr5TtY"
-	/>
+<BaseLayout
+  title="Freelance Full Stack Web Developer"
+  description="Freelance full-stack web developer skilled in React, Laravel, Node.js, and API integration. I build modern, responsive, and scalable websites tailored to client needs."
+  keywords="freelance”, “full-stack web developer”, “React”, “Laravel”, “API integration”, “responsive”, “scalable"
+>
+  <main class="max-w-4xl mx-auto">
+    <div class="bg-gray-800/60 rounded-2xl shadow-lg p-8">
+      <div class="mx-auto text-center">
+        <h1 class="text-2xl md:text-4xl font-bold py-2 mb-0">
+          Fahrul W. Djuhaeri
+        </h1>
+        <p class="text-sm md:text-base">Freelance Full Stack Web Developer</p>
+      </div>
+
+      <hr class="border-0 border-t border-t-gray-700 mt-5 mb-9" />
+
+      <p class="text-gray-300 mb-4">
+        I'm a <strong>freelance full-stack web developer</strong> passionate about building
+        modern web applications with clean code and powerful functionality. I
+        specialize in both <strong>front-end</strong> and <strong>back-end</strong> development and love working
+        with open-source technologies.
+      </p>
+      <p class="text-gray-300">
+        My goal is to help businesses grow through technology by creating
+        scalable, responsive, and user-focused digital experiences. I enjoy
+        solving problems, optimizing performance, and continuously learning new
+        skills.
+      </p>
+
+      <hr class="border-0 border-t border-t-gray-700 mt-10" />
+
+      <div class="flex flex-col md:flex-row justify-between gap-6 mt-6">
+        <div class="flex justify-center items-center gap-2">
+          <a
+            href="https://github.com/fwalid08"
+            class="bg-gray-800 hover:bg-gray-700 p-3 rounded-xl transition duration-300"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.simpleicons.org/github/ffffff"
+              alt="GitHub"
+              class="h-6 w-6"
+            />
+          </a>
+          <a
+            href="/resume.pdf"
+            class="bg-gray-800 hover:bg-gray-700 p-3 rounded-xl transition duration-300"
+            download
+          >
+            <img
+              src="https://cdn.simpleicons.org/libreoffice/ffffff"
+              alt="Resume"
+              class="h-6 w-6"
+            />
+          </a>
+        </div>
+        <a
+          href="#projects"
+          class="flex justify-center xs:w-full md:w-auto gap-2 items-center bg-gray-800 hover:bg-gray-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition duration-300"
+        >
+          <span>My Projects</span>
+          <svg
+            class="size-3 font-bold"
+            viewBox="-19.04 0 75.804 75.804"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+            ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+              <g
+                id="Group_65"
+                data-name="Group 65"
+                transform="translate(-831.568 -384.448)"
+              >
+                <path
+                  id="Path_57"
+                  data-name="Path 57"
+                  d="M833.068,460.252a1.5,1.5,0,0,1-1.061-2.561l33.557-33.56a2.53,2.53,0,0,0,0-3.564l-33.557-33.558a1.5,1.5,0,0,1,2.122-2.121l33.556,33.558a5.53,5.53,0,0,1,0,7.807l-33.557,33.56A1.5,1.5,0,0,1,833.068,460.252Z"
+                  fill="#ffffff"></path>
+              </g>
+            </g></svg
+          >
+        </a>
+      </div>
+    </div>
+
+    <div class="my-6"></div>
+
+    <div class="bg-gray-800/70 rounded-2xl shadow-lg p-8">
+      <div
+        class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-6 justify-items-center text-center"
+      >
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/php/white"
+            alt="PHP"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/javascript/white"
+            alt="JavaScript"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/typescript/white"
+            alt="TypeScript"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/python/white"
+            alt="Python"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/laravel/white"
+            alt="Laravel"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/express/white"
+            alt="Express.js"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/django/white"
+            alt="Django"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/react/white"
+            alt="ReactJS"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/vue.js/white"
+            alt="VueJS"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/angular/white"
+            alt="AngularJS"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/wordpress/white"
+            alt="WordPress"
+            class="h-10 mx-auto"
+          />
+        </div>
+        <div
+          class="bg-gray-900 hover:bg-gray-700 h-16 w-16 rounded-xl flex items-center justify-center transition duration-300"
+        >
+          <img
+            src="https://cdn.simpleicons.org/prestashop/white"
+            alt="PrestaShop"
+            class="h-10 mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
 </BaseLayout>
 
 <!--
